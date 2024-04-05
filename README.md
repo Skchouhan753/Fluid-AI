@@ -8,7 +8,7 @@ Frontend | Backend | Fullstack
 
 ## Deplolyed App
 Frontend: https://deployed-site.whatever<br/>
-Backend: https://deployed-site.whatever</br/>
+Backend: https://deployed-site.whatever<br/>
 Database: https://deployed-site.whatever<br/>
 
 ## Directory Structure

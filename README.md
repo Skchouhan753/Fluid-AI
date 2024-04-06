@@ -154,6 +154,8 @@ Include screenshots as necessary.
 
 
 ## API Endpoints
+**welcome**
+GET: http://localhost:8080/ or https://task-management-system-iqjo.onrender.com/ - welcome <br/>
 **user authentication**<br/>
 POST: http://localhost:8080/register or https://task-management-system-iqjo.onrender.com/register - register user <br/>
 POST: http://localhost:8080/login or https://task-management-system-iqjo.onrender.com/login - user login<br/>

@@ -32,11 +32,9 @@ task-management-system<br/>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ package.json<br/>
 
-## Video Walkthrough of the project
-Attach a very short video walkthough of all of the features
 
 ## Video Walkthrough of the codebase
-Attach a very short video walkthough of codebase 
+[Attach a very short video walkthough of codebase ](https://youtu.be/P_VHSc9-fZs)
 
 ## Features
 List out the key features of your application.
@@ -74,7 +72,8 @@ POST http://localhost:8080/register or https://task-management-system-iqjo.onren
     {
      "username":"fluidai",
      "email":"fluidai@gmail.com",
-     "password":"1234"
+     "password":"1234",
+     "role":"admin" / "user"  default : "user"
     }
 
 Login
@@ -93,8 +92,8 @@ POST: http://localhost:8080/task/create or https://task-management-system-iqjo.o
         "title":"work"
         "description":"home work"
         "dueDate":2024-12-01T18:30:00.000+00:00
-        "priority":"low"/"medium"/"high"   
-        "status":"done"
+        "priority":"low" / "medium" / "high"       default : "low"
+        "status":"todo" / "inprogress" / "done"    default : "done"
     }
 Retrieve all task ( you need to login first to access this and while GET request you have to provide token )
 GET: http://localhost:8080/task/ or https://task-management-system-iqjo.onrender.com/task/

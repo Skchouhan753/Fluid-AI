@@ -145,7 +145,6 @@ DELETE http://localhost:8080/taskk/id
 
 Include screenshots as necessary.
 
-## Credentials
 
 ## API Endpoints
 **user authentication**<br/>
@@ -166,4 +165,4 @@ List and provide a brief overview of the technologies used in the project.
 - Node.js
 - Express.js
 - MongoDB
-- Other libraries/modules
+

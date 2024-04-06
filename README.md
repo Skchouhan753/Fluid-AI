@@ -68,7 +68,11 @@ Provide instructions and examples on how to use your project.
 Include screenshots as necessary.
 
 ## Credentials
-Provide user credentials for autheticated pages
+{
+"username":"fluidai",
+"email":"fluidai@gmail.com"
+"password":"1234"
+}
 
 ## APIs Used
 If your application relies on external APIs, document them and include any necessary links or references.

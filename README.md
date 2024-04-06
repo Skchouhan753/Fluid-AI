@@ -62,18 +62,40 @@ Provide instructions and examples on how to use your project.
 
 ```bash
 # Example
-register user
-{
- "username":"fluidai",
- "email":"fluidai@gmail.com",
- "password":"1234"
-}
+Register a user
+POST http://localhost:8080/register
+    {
+     "username":"fluidai",
+     "email":"fluidai@gmail.com",
+     "password":"1234"
+    }
 
-login user
-{
- "email":"fluidai@gmail.com",
- "password":"1234"
-}
+Login
+POST http://localhost:8080/login
+    {
+     "email":"fluidai@gmail.com",
+     "password":"1234"
+    }
+
+Logout
+GET http://localhost:8080/logout
+
+Create Task
+POST http://localhost:8080/task/create
+    {
+        "title":"work"
+        "description":"home work"
+        "dueDate":2024-12-01T18:30:00.000+00:00
+        "priority":"low"
+        "status":"done"
+    }
+GET http://localhost:8080/task/
+
+GET http://localhost:8080/task/id
+
+PATCH http://localhost:8080/task/id
+
+DELETE http://localhost:8080/taskk/id
 ```
 
 Include screenshots as necessary.

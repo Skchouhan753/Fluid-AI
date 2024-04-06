@@ -45,9 +45,6 @@ List out the key features of your application.
 - user authentication 
 - manage task (CRUD)  
 
-## design decisions or assumptions
-List your design desissions & assumptions
-
 ## Installation & Getting started
 Detailed instructions on how to install, configure, and get the project running. For BE/FS projects, guide the reviewer how to check mongodb schema etc.
 
@@ -145,9 +142,6 @@ DELETE http://localhost:8080/taskk/id
 Include screenshots as necessary.
 
 ## Credentials
-
-## APIs Used
-If your application relies on external APIs, document them and include any necessary links or references.
 
 ## API Endpoints
 **user authentication**<br/>

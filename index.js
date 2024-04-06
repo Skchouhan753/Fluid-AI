@@ -12,13 +12,15 @@ app.use(cors());
 app.use(express.json());
 
 
+app.get("/",(req,res)=>{
+  res.status(200).json({msg:"wlcome"})
+})
+
 app.use("/",userRouter)
 app.use('/task',auth,TaskRouter)
 
 
-// app.get("/home",auth,(req,res)=>{
-//   res.send("hello")
-// })
+
 
 app.listen(PORT, async () => {
   try {

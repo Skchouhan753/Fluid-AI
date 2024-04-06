@@ -58,6 +58,13 @@ npm run server or npm run start
 Instructions and examples on to use.
 
 ```bash
+Enviroment
+mongoURI=mongodb+srv://kumarS:kumar@cluster0.kfih6hj.mongodb.net/FLUIDAI?retryWrites=true&w=majority&appName=Cluster0
+            or
+mongoURI=mongodb://127.0.0.1:27017/FLUIDAI
+PORT=8080
+SECRET_CODE=fluidai
+
 # Example
 POST http://localhost:8080/
     {

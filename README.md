@@ -1,7 +1,7 @@
 # RESTful API for a Task Management System
 
 ## Introduction
-A brief introduction of your project goes here. You may want to cover the purpose of your project, its core functionality, and what problems it solves.
+A Task Management System API is an interface that allows developers to interact with a task management system programmatically. This API enables users to create, read, update, and delete tasks within the task management system without directly accessing its interface.
 
 ## Project Type
 Backend 

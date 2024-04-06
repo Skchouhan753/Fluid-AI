@@ -68,10 +68,10 @@ Provide instructions and examples on how to use your project.
 Include screenshots as necessary.
 
 ## Credentials
-{
-"username":"fluidai",
-"email":"fluidai@gmail.com"
-"password":"1234"
+{<br/>
+"username":"fluidai",<br/>
+"email":"fluidai@gmail.com",<br/>
+"password":"1234"<br/>
 }
 
 ## APIs Used

@@ -50,8 +50,8 @@ Detailed instructions on how to install, configure, and get the project running.
 
 ```bash
 npm init task-management-system
-cd init task-management-system
-npm run server
+cd task-management-system
+npm run server or npm run start
 ```
 
 ## Usage

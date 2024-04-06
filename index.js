@@ -22,7 +22,7 @@ app.use('/task',auth,TaskRouter)
 
 
 
-app.listen(PORT, async () => {
+const server = app.listen(PORT, async () => {
   try {
     await connection;
     console.log(`server is running at port ${PORT}`);
@@ -31,3 +31,7 @@ app.listen(PORT, async () => {
     console.log(err);
   }
 });
+
+module.exports = {
+  server
+}

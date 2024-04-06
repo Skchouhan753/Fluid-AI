@@ -34,10 +34,10 @@ task-management-system<br/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ package.json<br/>
 
 ## Video Walkthrough of the project
-Attach a very short video walkthough of all of the features [ 1 - 3 minutes ]
+Attach a very short video walkthough of all of the features
 
 ## Video Walkthrough of the codebase
-Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
+Attach a very short video walkthough of codebase 
 
 ## Features
 List out the key features of your application.
@@ -46,7 +46,7 @@ List out the key features of your application.
 - manage task (CRUD)  
 
 ## Installation & Getting started
-Detailed instructions on how to install, configure, and get the project running. For BE/FS projects, guide the reviewer how to check mongodb schema etc.
+Instructions on how to install, configure, and get the project running.
 
 ```bash
 npm init task-management-system

@@ -11,7 +11,7 @@ const auth = async (req, res, next) => {
     // console.log(token)
     if (token) {
       const mongoToken = await BlackListModel.findOne({ token });
-      console.log(mongoToken);
+      // console.log(mongoToken);
   
       if (!mongoToken) {
         return res.json({ masg: "Please Login!" });

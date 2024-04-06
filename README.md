@@ -63,11 +63,18 @@ Provide instructions and examples on how to use your project.
 
 ```bash
 # Example
+register user
 {
-"username":"fluidai",
-"email":"fluidai@gmail.com",<br/>
-"password":"1234"<br/>
-}<br/>
+ "username":"fluidai",
+ "email":"fluidai@gmail.com",
+ "password":"1234"
+}
+
+login user
+{
+ "email":"fluidai@gmail.com",
+ "password":"1234"
+}
 ```
 
 Include screenshots as necessary.

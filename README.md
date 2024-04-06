@@ -34,7 +34,7 @@ task-management-system<br/>
 
 
 ## Video Walkthrough of the codebase
-[Attach a very short video walkthough of codebase ](https://youtu.be/P_VHSc9-fZs)
+[very short video walkthough of codebase ](https://youtu.be/P_VHSc9-fZs)
 
 ## Features
 List out the key features of your application.

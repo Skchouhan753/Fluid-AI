@@ -7,9 +7,8 @@ A Task Management System API is an interface that allows developers to interact 
 Backend 
 
 ## Deplolyed App
-Frontend: https://deployed-site.whatever<br/>
-Backend: https://deployed-site.whatever<br/>
-Database: https://deployed-site.whatever<br/>
+Backend: https://task-management-system-iqjo.onrender.com/ <br/>
+Database: mongodb+srv://kumarS:kumar@cluster0.kfih6hj.mongodb.net/FLUIDAI?retryWrites=true&w=majority&appName=Cluster0<br/>
 
 ## Directory Structure
 task-management-system<br/>
@@ -154,7 +153,7 @@ Include screenshots as necessary.
 
 
 ## API Endpoints
-**welcome**
+**welcome**<br/>
 GET: http://localhost:8080/ or https://task-management-system-iqjo.onrender.com/ - welcome <br/>
 **user authentication**<br/>
 POST: http://localhost:8080/register or https://task-management-system-iqjo.onrender.com/register - register user <br/>

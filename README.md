@@ -12,10 +12,14 @@ Backend: https://deployed-site.whatever<br/>
 Database: https://deployed-site.whatever<br/>
 
 ## Directory Structure
-my-app/
-├─ backend/
-├─ frontend/
-│  ├─ ...
+task-management-system<br/>
+├─ backend<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ <br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ <br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ <br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ <br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ <br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ <br/>
 
 ## Video Walkthrough of the project
 Attach a very short video walkthough of all of the features [ 1 - 3 minutes ]

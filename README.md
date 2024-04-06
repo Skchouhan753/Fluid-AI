@@ -74,12 +74,17 @@ Provide user credentials for autheticated pages
 If your application relies on external APIs, document them and include any necessary links or references.
 
 ## API Endpoints
-**task endpoints**
+**user authentication**<br/>
+POST http://localhost:8080/register - register user <br/>
+POST http://localhost:8080/login - user login<br/>
+GET http://localhost:8080/logout - user logout<br/>
+<br/>
+**task endpoints**<br/>
 GET http://localhost:8080/task/ - retrieve all all tasks <br/>
-GET http://localhost:8080/tsak/id - retrive single task<br/>
-POST http://localhost:8080/tsak/create - create task<br/>
-PATCH http://localhost:8080/tsak/id - update task<br/>
-DELETE http://localhost:8080/tsak/id - delete task<br/>
+GET http://localhost:8080/task/id - retrieve single task<br/>
+POST http://localhost:8080/task/create - create task<br/>
+PATCH http://localhost:8080/task/id - update task<br/>
+DELETE http://localhost:8080/taskk/id - delete task<br/>
 
 ## Technology Stack
 List and provide a brief overview of the technologies used in the project.

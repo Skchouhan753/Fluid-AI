@@ -45,9 +45,6 @@ List out the key features of your application.
 - user authentication 
 - manage task (CRUD)  
 
-## design decisions or assumptions
-List your design desissions & assumptions
-
 ## Installation & Getting started
 Detailed instructions on how to install, configure, and get the project running. For BE/FS projects, guide the reviewer how to check mongodb schema etc.
 
@@ -58,30 +55,93 @@ npm run server
 ```
 
 ## Usage
-Provide instructions and examples on how to use your project.
+Instructions and examples on to use.
 
 ```bash
 # Example
-register user
-{
- "username":"fluidai",
- "email":"fluidai@gmail.com",
- "password":"1234"
-}
+Register a user
+POST http://localhost:8080/register
+    {
+     "username":"fluidai",
+     "email":"fluidai@gmail.com",
+     "password":"1234"
+    }
 
-login user
-{
- "email":"fluidai@gmail.com",
- "password":"1234"
-}
+Login
+POST http://localhost:8080/login
+    {
+     "email":"fluidai@gmail.com",
+     "password":"1234"
+    }
+
+Logout
+GET http://localhost:8080/logout
+
+Create Task
+POST http://localhost:8080/task/create
+    {
+        "title":"work"
+        "description":"home work"
+        "dueDate":2024-12-01T18:30:00.000+00:00
+        "priority":"low"/"medium"/"high"   
+        "status":"done"
+    }
+Retrieve all task ( you need to login first to access this and while GET request you have to provide token )
+GET http://localhost:8080/task/
+    [
+        {
+            "_id": "6610352efe0cd5e737f45820",
+            "title":"work",
+            "description":"home work",
+            "dueDate":2024-12-01T18:30:00.000+00:00,
+            "priority":"low",
+            "status":"done"
+        },
+        {
+            "_id": "6610352efe0cd5e737f45820",
+            "title":"office work",
+            "description":"get details of employee",
+            "dueDate":2024-12-01T18:30:00.000+00:00,
+            "priority":"low",
+            "status":"done"
+        },
+        {
+            "_id": "6610352efe0cd5e737f45820",
+            "title": "tommo",
+            "description": "String",
+            "dueDate": "2024-12-01T18:30:00.000Z",
+            "priority": "low",
+            "status": "done"
+        }
+    ]
+Retrieve single task by id
+GET http://localhost:8080/task/id
+    {
+        "_id": "6610352efe0cd5e737f45820",
+        "title":"work",
+        "description":"home work",
+        "dueDate":2024-12-01T18:30:00.000+00:00,
+        "priority":"low",
+        "status":"done"
+    }
+
+Update task
+PATCH http://localhost:8080/task/id
+    {
+        "title":"work24"
+        "description":"office work"
+        "dueDate":2024-12-01T18:30:00.000+00:00
+        "priority":"medium",
+        "status":"done"
+    }
+
+Delete task
+DELETE http://localhost:8080/taskk/id
 ```
 
 Include screenshots as necessary.
 
 ## Credentials
-
-## APIs Used
-If your application relies on external APIs, document them and include any necessary links or references.
 
 ## API Endpoints
 **user authentication**<br/>

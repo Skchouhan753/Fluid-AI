@@ -72,17 +72,17 @@ POST http://localhost:8080/register
     }
 
 Login
-POST http://localhost:8080/login
+POST: http://localhost:8080/login
     {
      "email":"fluidai@gmail.com",
      "password":"1234"
     }
 
 Logout
-GET http://localhost:8080/logout
+GET: http://localhost:8080/logout
 
 Create Task
-POST http://localhost:8080/task/create
+POST: http://localhost:8080/task/create
     {
         "title":"work"
         "description":"home work"
@@ -91,7 +91,7 @@ POST http://localhost:8080/task/create
         "status":"done"
     }
 Retrieve all task ( you need to login first to access this and while GET request you have to provide token )
-GET http://localhost:8080/task/
+GET: http://localhost:8080/task/
     [
         {
             "_id": "6610352efe0cd5e737f45820",
@@ -119,7 +119,7 @@ GET http://localhost:8080/task/
         }
     ]
 Retrieve single task by id
-GET http://localhost:8080/task/id
+GET: http://localhost:8080/task/id
     {
         "_id": "6610352efe0cd5e737f45820",
         "title":"work",
@@ -130,7 +130,7 @@ GET http://localhost:8080/task/id
     }
 
 Update task
-PATCH http://localhost:8080/task/id
+PATCH: http://localhost:8080/task/id
     {
         "title":"work24"
         "description":"office work"
@@ -140,7 +140,7 @@ PATCH http://localhost:8080/task/id
     }
 
 Delete task
-DELETE http://localhost:8080/taskk/id
+DELETE: http://localhost:8080/taskk/id
 ```
 
 Include screenshots as necessary.
@@ -148,16 +148,16 @@ Include screenshots as necessary.
 
 ## API Endpoints
 **user authentication**<br/>
-POST http://localhost:8080/register - register user <br/>
-POST http://localhost:8080/login - user login<br/>
-GET http://localhost:8080/logout - user logout<br/>
+POST: http://localhost:8080/register - register user <br/>
+POST: http://localhost:8080/login - user login<br/>
+GET: http://localhost:8080/logout - user logout<br/>
 <br/>
 **task endpoints**<br/>
-GET http://localhost:8080/task/ - retrieve all all tasks <br/>
-GET http://localhost:8080/task/id - retrieve single task<br/>
-POST http://localhost:8080/task/create - create task<br/>
-PATCH http://localhost:8080/task/id - update task<br/>
-DELETE http://localhost:8080/taskk/id - delete task<br/>
+GET: http://localhost:8080/task/ - retrieve all all tasks <br/>
+GET: http://localhost:8080/task/id - retrieve single task<br/>
+POST: http://localhost:8080/task/create - create task<br/>
+PATCH: http://localhost:8080/task/id - update task<br/>
+DELETE: http://localhost:8080/taskk/id - delete task<br/>
 
 ## Technology Stack
 List and provide a brief overview of the technologies used in the project.

@@ -42,8 +42,8 @@ Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
 ## Features
 List out the key features of your application.
 
-- user authentication 1
-- manage task (CRUD)  2
+- user authentication 
+- manage task (CRUD)  
 
 ## design decisions or assumptions
 List your design desissions & assumptions

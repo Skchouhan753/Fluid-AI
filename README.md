@@ -59,6 +59,10 @@ Instructions and examples on to use.
 
 ```bash
 # Example
+POST http://localhost:8080/
+    {
+        "msg": "wlcome"
+    }
 Register a user
 POST http://localhost:8080/register
     {

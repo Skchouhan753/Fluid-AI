@@ -32,12 +32,15 @@ describe("Testing APi", () => {
           };
         chai.request(server)
           .post('/task/create')
-          .send(taskData);
+          .send(taskData)
+        //   .end((err,res)=>{
+            
+        // })
         response.should.have.status(201);
         response.body.should.be.an('object');
         response.body.should.have.property('_id');
         
+        done()
       });
-      done()
   });
 });

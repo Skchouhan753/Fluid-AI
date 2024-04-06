@@ -8,7 +8,7 @@ TaskRouter.post('/create', async (req, res) => {
   try {
     const task = new TaskModel(req.body);
     await task.save();
-    res.status(201).json(task);
+    res.status(200).json(task);
   } catch (err) {
     res.status(400).json({ error: err.message });
   }
@@ -29,7 +29,7 @@ TaskRouter.get('/:id', async (req, res) => {
   try {
     const task = await TaskModel.findById(req.params.id);
     if (!task) {
-      return res.status(404).json({ error: 'Task not found' });
+      return res.status(200).json({ error: 'Task not found' });
     }
     res.status(200).json(task);
   } catch (err) {
@@ -45,7 +45,7 @@ TaskRouter.patch('/:id', async (req, res) => {
       runValidators: true,
     });
     if (!task) {
-      return res.status(404).json({ error: 'Task not found' });
+      return res.status(200).json({ error: 'Task not found' });
     }
     res.json(task);
   } catch (err) {
@@ -58,7 +58,7 @@ TaskRouter.delete('/:id', async (req, res) => {
   try {
     const task = await TaskModel.findByIdAndDelete(req.params.id);
     if (!task) {
-      return res.status(404).json({ error: 'Task not found' });
+      return res.status(200).json({ error: 'Task not found' });
     }
     res.json({ message: 'Task deleted successfully' });
   } catch (err) {

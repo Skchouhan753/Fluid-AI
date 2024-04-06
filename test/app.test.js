@@ -45,7 +45,6 @@ describe("Testing APi", () => {
           response.body.should.be.an('object');
           response.body.should.have.property('_id');
   
-          // Call done() to indicate the completion of the test
           done();
         });
     });

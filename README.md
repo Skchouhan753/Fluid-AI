@@ -69,9 +69,9 @@ Include screenshots as necessary.
 
 ## Credentials
 {<br/>
-"username":"fluidai",<br/>
-"email":"fluidai@gmail.com",<br/>
-"password":"1234"<br/>
+ &nbsp; &nbsp;"username":"fluidai",<br/>
+ &nbsp; &nbsp;"email":"fluidai@gmail.com",<br/>
+ &nbsp; &nbsp;"password":"1234"<br/>
 }
 
 ## APIs Used
@@ -80,6 +80,11 @@ If your application relies on external APIs, document them and include any neces
 ## API Endpoints
 **user authentication**<br/>
 POST http://localhost:8080/register - register user <br/>
+{<br/>
+"username":"fluidai",<br/>
+"email":"fluidai@gmail.com",<br/>
+"password":"1234"<br/>
+}<br/>
 POST http://localhost:8080/login - user login<br/>
 GET http://localhost:8080/logout - user logout<br/>
 <br/>

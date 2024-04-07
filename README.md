@@ -32,9 +32,11 @@ task-management-system<br/>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─ package.json<br/>
 
+## Video Walkthrough of the project
+[video walkthough of all of the features](https://youtu.be/Zw2lwjOq1PA)
 
 ## Video Walkthrough of the codebase
-[very short video walkthough of codebase ](https://youtu.be/P_VHSc9-fZs)
+[video walkthough of codebase ](https://youtu.be/P_VHSc9-fZs)
 
 ## Features
 List out the key features of your application.
@@ -49,6 +51,8 @@ Instructions on how to install, configure, and get the project running.
 npm init task-management-system
 cd task-management-system
 npm run server or npm run start
+
+npm run test 
 ```
 
 ## Usage
@@ -63,40 +67,60 @@ PORT=8080
 SECRET_CODE=fluidai
 
 # Example
-POST http://localhost:8080/  or  https://task-management-system-iqjo.onrender.com/
-    {
-        "msg": "wlcome"
-    }
+
+POST: http://localhost:8080/
+              or
+      https://task-management-system-iqjo.onrender.com/
+
+        {
+            "msg": "wlcome"
+        }
+
 Register a user
-POST http://localhost:8080/register or https://task-management-system-iqjo.onrender.com/register
-    {
-     "username":"fluidai",
-     "email":"fluidai@gmail.com",
-     "password":"1234",
-     "role":"admin" / "user"  default : "user"
-    }
+POST: http://localhost:8080/register
+                 or
+      https://task-management-system-iqjo.onrender.com/register
+
+        {
+             "username":"fluidai",
+             "email":"fluidai@gmail.com",
+             "password":"1234",
+             "role":"admin" / "user"  default : "user"
+        }
 
 Login
-POST: http://localhost:8080/login or https://task-management-system-iqjo.onrender.com/login
-    {
-     "email":"fluidai@gmail.com",
-     "password":"1234"
-    }
+POST: http://localhost:8080/login
+                or
+      https://task-management-system-iqjo.onrender.com/login
+
+        {
+             "email":"fluidai@gmail.com",
+             "password":"1234"
+        }
 
 Logout
-GET: http://localhost:8080/logout or https://task-management-system-iqjo.onrender.com/logout
+GET: http://localhost:8080/logout
+                or
+     https://task-management-system-iqjo.onrender.com/logout
 
 Create Task
-POST: http://localhost:8080/task/create or https://task-management-system-iqjo.onrender.com/task/create
-    {
-        "title":"work"
-        "description":"home work"
-        "dueDate":2024-12-01T18:30:00.000+00:00
-        "priority":"low" / "medium" / "high"       default : "low"
-        "status":"todo" / "inprogress" / "done"    default : "done"
-    }
+POST: http://localhost:8080/task/create
+                    or
+      https://task-management-system-iqjo.onrender.com/task/create
+
+        {
+            "title":"work"
+            "description":"home work"
+            "dueDate":2024-12-01T18:30:00.000+00:00
+            "priority":"low" / "medium" / "high"       default : "low"
+            "status":"todo" / "inprogress" / "done"    default : "done"
+        }
+
 Retrieve all task ( you need to login first to access this and while GET request you have to provide token )
-GET: http://localhost:8080/task/ or https://task-management-system-iqjo.onrender.com/task/
+GET: http://localhost:8080/task/
+                or
+     https://task-management-system-iqjo.onrender.com/task/
+
     [
         {
             "_id": "6610352efe0cd5e737f45820",
@@ -123,29 +147,38 @@ GET: http://localhost:8080/task/ or https://task-management-system-iqjo.onrender
             "status": "done"
         }
     ]
+
 Retrieve single task by id
-GET: http://localhost:8080/task/id or https://task-management-system-iqjo.onrender.com/task/id
-    {
-        "_id": "6610352efe0cd5e737f45820",
-        "title":"work",
-        "description":"home work",
-        "dueDate":2024-12-01T18:30:00.000+00:00,
-        "priority":"low",
-        "status":"done"
-    }
+GET: http://localhost:8080/task/id
+                or
+     https://task-management-system-iqjo.onrender.com/task/id
+
+        {
+            "_id": "6610352efe0cd5e737f45820",
+            "title":"work",
+            "description":"home work",
+            "dueDate":2024-12-01T18:30:00.000+00:00,
+            "priority":"low",
+            "status":"done"
+        }
 
 Update task
-PATCH: http://localhost:8080/task/id or https://task-management-system-iqjo.onrender.com/task/id
-    {
-        "title":"work24"
-        "description":"office work"
-        "dueDate":2024-12-01T18:30:00.000+00:00
-        "priority":"medium",
-        "status":"done"
-    }
+PATCH: http://localhost:8080/task/id
+                    or
+       https://task-management-system-iqjo.onrender.com/task/id
+
+        {
+            "title":"work24"
+            "description":"office work"
+            "dueDate":2024-12-01T18:30:00.000+00:00
+            "priority":"medium",
+            "status":"done"
+        }
 
 Delete task
-DELETE: http://localhost:8080/taskk/id or https://task-management-system-iqjo.onrender.com/task/id
+DELETE: http://localhost:8080/taskk/id
+                    or
+        https://task-management-system-iqjo.onrender.com/task/id
 ```
 
 Include screenshots as necessary.

@@ -48,11 +48,15 @@ List out the key features of your application.
 Instructions on how to install, configure, and get the project running.
 
 ```bash
-npm init task-management-system
+mkdir task-management-system
 cd task-management-system
-npm run server or npm run start
 
-npm run test 
+Installation
+- you can use any node version that works for you ( 18+ )
+- Navigate to the correct path
+- Run **npm install** to install the node modules
+- Run **npm run server or npm run start** to run the server locally
+- Run **npm test** for the test cases.
 ```
 
 ## Usage
